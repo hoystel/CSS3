@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    100% {left:80%; top:80%;}
+}
+
+#landing{
+	background-color:red;
+	height:100px;
+	width:400px;
+	position:absolute;
+	bottom:-100px;
+	right:0px;
+	animation-name: popup;
+	animation-duration: 4s;
+	animation-delay:6s;
+	animation-direction:alternate;
+	}
+	
+@keyframes popup{
+	100% {bottom:-63px;}
+	}
+
+
+/* Chrome, Safari, Opera 
+@-webkit-keyframes example {
+    0%   {bleft:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}*/
+</style>
+</head>
+<body>
+
+<div>
+<img src="drone.gif">
+</div>
+
+<section id="landing">
+</section>
+
+</body>
+</html>
